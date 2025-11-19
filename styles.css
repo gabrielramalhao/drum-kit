@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fefae0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+  color: #dda15e;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.keys {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.key {
+  background-color: #283618;
+  padding: 30px;
+  border-radius: 10%;
+  color: #dda15e;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.key-pressed {
+  animation: key-pressed 1s;
+}
+
+@keyframes key-pressed {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
